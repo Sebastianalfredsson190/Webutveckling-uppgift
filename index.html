@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo">Original text</div>
+    <table>
+		<tr>
+			<th id="header">Original rubrik</th>
+		</tr>
+	</table>
+
+	<button onclick="changeHeader()">Ändra rubrik</button>
+
+    <img id="myImage" src="White-horse.png" width="300px">
+	<button onclick="changeImage()">Byt bild</button>
+
+    <p id="myText">Original text</p>
+	<button onclick="changeText()">Ändra text</button>
+
+	<script>
+		document.getElementById("demo").innerHTML = "Ny text";
+        function changeHeader() {
+			document.getElementById("header").innerHTML = "Ny rubrik";
+		}
+        function changeImage() {
+			document.getElementById("myImage").src = "hej.jpg";
+		}
+        function changeText() {
+			document.getElementById("myText").innerHTML = "Ny text";
+		}
+
+	</script>
+</body>
+</html>
